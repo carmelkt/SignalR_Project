@@ -2,14 +2,38 @@
 
 
 (function () {
+
+    $("#clickMe").on("click", function () {
+        $.connection.myHub.server.getServerDateTime()
+            .done(function (data) {
+                writeToPage(data);
+            })
+            .fail(function (e) {
+                writeToPage(e);
+            });
+    })
+    //document.getElementById("clickMe").addEventListener("click", function () {
+    //    $.connection.myHub.server.getServerDateTime()
+    //        .done(function (data) {
+    //            writeToPage(data);
+    //        })
+    //        .fail(function (e) {
+    //            writeToPage(e);
+    //        });
+    //})
     $.connection.hub.start()
         .done(function () {
-            console.log("TESTING!! It Works!!");
-            $.connection.myHub.server.announce("Connected!!");
+            $.connection.hub.logging = true;
+            writeToPage("TESTING!! It Works!!");
+            $.connection.myHub.server.announce("Connected!!");         
         })
-        .fail(function () { alert("ERROR!") });
+        .fail(function () { writeToPage("Error connecting!!"); });
 
     $.connection.myHub.client.announce = function (message) {
+        writeToPage(message);
+    }
+
+    var writeToPage = function (message) {
         $("#welcome-messages").append(message + "<br/>");
     }
 })()

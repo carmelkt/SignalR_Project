@@ -90,7 +90,6 @@ C:\Users\user\Downloads\SignalR-Project-Carmel\SignalRTest\bin\Microsoft.Owin.Se
 C:\Users\user\Downloads\SignalR-Project-Carmel\SignalRTest\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\user\Downloads\SignalR-Project-Carmel\SignalRTest\bin\Microsoft.Owin.Security.OAuth.xml
 C:\Users\user\Downloads\SignalR-Project-Carmel\SignalRTest\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\user\Downloads\SignalR-Project-Carmel\SignalRTest\obj\Debug\SignalRTest.csprojAssemblyReference.cache
 C:\Users\user\Downloads\SignalR-Project-Carmel\SignalRTest\obj\Debug\SignalRTest.csproj.CoreCompileInputs.cache
 C:\Users\user\Downloads\SignalR-Project-Carmel\SignalRTest\obj\Debug\SignalRTest.csproj.CopyComplete
 C:\Users\user\Downloads\SignalR-Project-Carmel\SignalRTest\obj\Debug\SignalRTest.dll
